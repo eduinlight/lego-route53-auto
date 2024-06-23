@@ -24,3 +24,24 @@ AWS_SECRET_ACCESS_KEY="your secret access key"
 AWS_REGION="aws region"
 AWS_HOSTED_ZONE_ID="your hosted zone id"
 ```
+
+## Example with `docker-compose`
+
+```YAML
+services:
+  cron:
+    image: lego-route53-auto
+    container_name: lego-route53-auto
+    build:
+      context: .
+    restart: unless-stopped
+    volumes:
+      - ./certs:/root/certs
+    environment:
+      - CERTIFICATE_EMAIL=${CERTIFICATE_EMAIL}
+      - DOMAIN=${DOMAIN}
+      - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
+      - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
+      - AWS_REGION=${AWS_REGION}
+      - AWS_HOSTED_ZONE_ID=${AWS_HOSTED_ZONE_ID}
+```

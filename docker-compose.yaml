@@ -1,6 +1,6 @@
 services:
   cron:
-    image: lego-route53-auto
+    image: eduinlight/lego-route53-auto
     container_name: lego-route53-auto
     build:
       context: .
