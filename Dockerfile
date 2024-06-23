@@ -12,4 +12,4 @@ COPY *.sh /usr/bin/
 
 RUN chmod +x /usr/bin/lego.sh
 
-CMD bash -c "lego.sh renew && crond -f"
+CMD bash -c "lego.sh run && crond -f"
