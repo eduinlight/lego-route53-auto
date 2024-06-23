@@ -24,5 +24,3 @@ AWS_SECRET_ACCESS_KEY="your secret access key"
 AWS_REGION="aws region"
 AWS_HOSTED_ZONE_ID="your hosted zone id"
 ```
-
-## Output certificates
