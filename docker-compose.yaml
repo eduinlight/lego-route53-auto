@@ -4,6 +4,7 @@ services:
     container_name: lego-route53-auto
     build:
       context: .
+    restart: unless-stopped
     volumes:
       - ./certs:/root/certs
     environment:
