@@ -16,7 +16,7 @@ CERTIFICATE_EMAIL="email here"
 # Domain where the certificate is available
 DOMAIN="domain here"
 
-# Aws iam credentials. Fallow lego documentation for route53
+# Aws iam credentials. Follow lego documentation for route53
 # https://go-acme.github.io/lego/dns/route53/
 #
 AWS_ACCESS_KEY_ID="your key id"
