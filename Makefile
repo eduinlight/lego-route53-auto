@@ -5,3 +5,6 @@ docker-login:
 
 publish-latest:
 	@docker push eduinlight/c-cpp-local-dev
+
+build:
+	@docker compose build
