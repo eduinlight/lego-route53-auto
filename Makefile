@@ -1,5 +1,7 @@
 SHELL=/bin/bash
 
+all: build
+
 docker-login:
 	@docker login -u eduinlight --password-stdin <<< ${DOCKER_HUB_TOKEN}
 
